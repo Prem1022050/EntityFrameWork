@@ -14,7 +14,8 @@ namespace EntityFrameWork.Controllers
         [HttpGet]
         public IActionResult Add()
         {
-            return View();
+            var employeeModel = new EmployeeModel(); // Create an instance of EmployeeModel
+            return View(employeeModel);
         }
 
         [HttpPost]

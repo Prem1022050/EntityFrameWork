@@ -1,5 +1,35 @@
 ﻿@model EntityFrameWork.Models.EmployeeUpdateModel
+<style>
+    body {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBfRgy3BuKOS2vtySQuip10aahY6q-jLt7KoDLarPO_A&s");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: linear-gradient(0deg, rgb(81, 211, 246) 0%, rgb(109, 153, 156) 86%);
+        );
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+
+    button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
 
 <form method="post" asp-controller="Employee" asp-action="Update">
     <div class="mb-3">
